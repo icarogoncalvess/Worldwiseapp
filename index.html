@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,9 +9,9 @@ html
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Worldwise - Vagas de Intercâmbio</title>
     <!-- Adicionando SRI (Subresource Integrity) para maior segurança -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaHbzKNUeBDQFYhP4z8Qjq0T9s6V6ZMFY9qbHMi2FzUy9R7q1YIV4hX+GT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com" integrity="sha384-..."></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
     
     <!-- Adicionando pré-conexão para melhor performance -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -234,8 +233,78 @@ html
                 <p class="text-muted">Encontre a oportunidade perfeita para seu intercâmbio</p>
             </div>
             
-            <div class="row mb-4" id="vagasContainer">
-                <!-- As vagas serão carregadas dinamicamente via JavaScript -->
+            <div class="row mb-4">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100 job-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <span class="badge bg-success mb-2">Disponível</span>
+                                    <h5 class="card-title">Au Pair na Alemanha</h5>
+                                    <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Berlim, Alemanha</p>
+                                </div>
+                                <img src="https://flagcdn.com/w40/de.png" alt="Alemanha" style="width: 40px; height: auto;">
+                            </div>
+                            <p class="card-text">Trabalhe cuidando de crianças em uma família alemã enquanto aprende o idioma e a cultura local.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-euro-sign me-2"></i>Salário: €300-500/mês</li>
+                                <li><i class="fas fa-clock me-2"></i>Duração: 12 meses</li>
+                                <li><i class="fas fa-graduation-cap me-2"></i>Requisitos: Inglês intermediário</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Au Pair na Alemanha">Aplicar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100 job-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <span class="badge bg-success mb-2">Disponível</span>
+                                    <h5 class="card-title">Estágio em TI no Canadá</h5>
+                                    <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Toronto, Canadá</p>
+                                </div>
+                                <img src="https://flagcdn.com/w40/ca.png" alt="Canadá" style="width: 40px; height: auto;">
+                            </div>
+                            <p class="card-text">Estágio remunerado em empresas de tecnologia com possibilidade de efetivação após o término.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-dollar-sign me-2"></i>Salário: CAD$2000-2500/mês</li>
+                                <li><i class="fas fa-clock me-2"></i>Duração: 6-12 meses</li>
+                                <li><i class="fas fa-graduation-cap me-2"></i>Requisitos: Inglês avançado, conhecimento em programação</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Estágio em TI no Canadá">Aplicar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card h-100 job-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <span class="badge bg-warning text-dark mb-2">Últimas vagas</span>
+                                    <h5 class="card-title">Trabalho em Resort na Austrália</h5>
+                                    <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i>Gold Coast, Austrália</p>
+                                </div>
+                                <img src="https://flagcdn.com/w40/au.png" alt="Austrália" style="width: 40px; height: auto;">
+                            </div>
+                            <p class="card-text">Vagas em resort para recepção, restaurante e entretenimento com acomodação inclusa.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-dollar-sign me-2"></i>Salário: AUD$20-25/hora</li>
+                                <li><i class="fas fa-clock me-2"></i>Duração: 6-24 meses</li>
+                                <li><i class="fas fa-graduation-cap me-2"></i>Requisitos: Inglês intermediário</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal" data-job="Trabalho em Resort na Austrália">Aplicar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="text-center mt-4">
@@ -256,24 +325,26 @@ html
                 <div class="col-lg-4 mb-4">
                     <div class="card">
                         <div class="card-body text-center">
-                            <img src="https://ui-avatars.com/api/?name=John+Doe&background=3498db&color=fff&size=150" alt="Foto do perfil" class="profile-pic mb-3" id="profilePicture">
-                            <h4 id="profileName">Visitante</h4>
-                            <p class="text-muted" id="profileRole">Candidato a Intercâmbio</p>
-                            <div class="d-flex justify-content-center gap-2 mb-3" id="profileBadges">
-                                <!-- Badges serão carregadas dinamicamente -->
+                            <img src="https://ui-avatars.com/api/?name=John+Doe&background=3498db&color=fff&size=150" alt="Foto do perfil" class="profile-pic mb-3">
+                            <h4>John Doe</h4>
+                            <p class="text-muted">Candidato a Intercâmbio</p>
+                            <div class="d-flex justify-content-center gap-2 mb-3">
+                                <span class="badge bg-primary">Inglês Avançado</span>
+                                <span class="badge bg-secondary">TI</span>
+                                <span class="badge bg-success">Disponível</span>
                             </div>
                             
                             <div class="mb-4">
                                 <h6>Perfil Completo</h6>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" id="profileProgress" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
                                 </div>
                             </div>
                             
-                            <button class="btn btn-outline-primary btn-sm w-100 mb-2" id="editProfileBtn">
+                            <button class="btn btn-outline-primary btn-sm w-100 mb-2">
                                 <i class="fas fa-edit me-1"></i>Editar Perfil
                             </button>
-                            <button class="btn btn-outline-secondary btn-sm w-100" id="downloadCVBtn">
+                            <button class="btn btn-outline-secondary btn-sm w-100">
                                 <i class="fas fa-file-pdf me-1"></i>Baixar CV
                             </button>
                         </div>
@@ -282,8 +353,15 @@ html
                     <div class="card mt-4">
                         <div class="card-body">
                             <h5 class="card-title">Minhas Candidaturas</h5>
-                            <ul class="list-group list-group-flush" id="myApplicationsList">
-                                <li class="list-group-item text-center text-muted">Faça login para ver suas candidaturas</li>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Estágio em TI no Canadá
+                                    <span class="badge bg-info">Em análise</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Au Pair na França
+                                    <span class="badge bg-secondary">Arquivada</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -316,35 +394,34 @@ html
                                         <div class="row mb-3">
                                             <div class="col-md-6">
                                                 <label for="firstName" class="form-label required-field">Nome</label>
-                                                <input type="text" class="form-control" id="firstName" required>
+                                                <input type="text" class="form-control" id="firstName" value="John" required>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="lastName" class="form-label required-field">Sobrenome</label>
-                                                <input type="text" class="form-control" id="lastName" required>
+                                                <input type="text" class="form-control" id="lastName" value="Doe" required>
                                             </div>
                                         </div>
                                         
                                         <div class="row mb-3">
                                             <div class="col-md-6">
                                                 <label for="email" class="form-label required-field">Email</label>
-                                                <input type="email" class="form-control" id="email" required>
+                                                <input type="email" class="form-control" id="email" value="john.doe@example.com" required>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="phone" class="form-label">Telefone</label>
-                                                <input type="tel" class="form-control" id="phone">
+                                                <input type="tel" class="form-control" id="phone" value="+55 11 99999-9999">
                                             </div>
                                         </div>
                                         
                                         <div class="row mb-3">
                                             <div class="col-md-6">
                                                 <label for="birthDate" class="form-label required-field">Data de Nascimento</label>
-                                                <input type="date" class="form-control" id="birthDate" required>
+                                                <input type="date" class="form-control" id="birthDate" value="1995-05-15" required>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="nationality" class="form-label required-field">Nacionalidade</label>
                                                 <select class="form-select" id="nationality" required>
-                                                    <option value="" selected disabled>Selecione...</option>
-                                                    <option value="BR">Brasileiro</option>
+                                                    <option value="BR" selected>Brasileiro</option>
                                                     <option value="PT">Português</option>
                                                     <option value="OTHER">Outra</option>
                                                 </select>
@@ -353,7 +430,7 @@ html
                                         
                                         <div class="mb-3">
                                             <label for="address" class="form-label">Endereço</label>
-                                            <textarea class="form-control" id="address" rows="2"></textarea>
+                                            <textarea class="form-control" id="address" rows="2">Rua Exemplo, 123 - São Paulo/SP</textarea>
                                         </div>
                                         
                                         <div class="text-end">
@@ -365,7 +442,7 @@ html
                                 <div class="tab-pane fade" id="education" role="tabpanel">
                                     <h6>Formação Acadêmica</h6>
                                     <div class="table-responsive">
-                                        <table class="table" id="educationTable">
+                                        <table class="table">
                                             <thead>
                                                 <tr>
                                                     <th>Curso</th>
@@ -375,7 +452,24 @@ html
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <!-- Dados de educação serão carregados dinamicamente -->
+                                                <tr>
+                                                    <td>Ciência da Computação</td>
+                                                    <td>Universidade de São Paulo</td>
+                                                    <td>2018-2022</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></button>
+                                                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ensino Médio</td>
+                                                    <td>Colégio Estadual</td>
+                                                    <td>2015-2017</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></button>
+                                                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -388,7 +482,7 @@ html
                                 <div class="tab-pane fade" id="experience" role="tabpanel">
                                     <h6>Experiência Profissional</h6>
                                     <div class="table-responsive">
-                                        <table class="table" id="experienceTable">
+                                        <table class="table">
                                             <thead>
                                                 <tr>
                                                     <th>Cargo</th>
@@ -398,7 +492,24 @@ html
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <!-- Dados de experiência serão carregados dinamicamente -->
+                                                <tr>
+                                                    <td>Desenvolvedor Júnior</td>
+                                                    <td>Tech Solutions Ltda</td>
+                                                    <td>2021-Presente</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></button>
+                                                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Estagiário em TI</td>
+                                                    <td>Digital Systems</td>
+                                                    <td>2019-2021</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></button>
+                                                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -413,8 +524,85 @@ html
                                         <i class="fas fa-info-circle me-2"></i>Envie seus documentos para completar seu perfil e aumentar suas chances nas vagas.
                                     </div>
                                     
-                                    <div class="row" id="documentsContainer">
-                                        <!-- Documentos serão carregados dinamicamente -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <h6 class="card-title mb-1">Currículo (CV)</h6>
+                                                            <p class="text-muted small mb-0">Envie seu currículo atualizado</p>
+                                                        </div>
+                                                        <span class="badge bg-success">Enviado</span>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <button class="btn btn-sm btn-outline-primary me-2">
+                                                            <i class="fas fa-download me-1"></i>Baixar
+                                                        </button>
+                                                        <button class="btn btn-sm btn-outline-secondary">
+                                                            <i class="fas fa-upload me-1"></i>Substituir
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <h6 class="card-title mb-1">Documento de Identidade</h6>
+                                                            <p class="text-muted small mb-0">RG ou Passaporte</p>
+                                                        </div>
+                                                        <span class="badge bg-warning text-dark">Pendente</span>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <button class="btn btn-sm btn-outline-primary">
+                                                            <i class="fas fa-upload me-1"></i>Enviar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <h6 class="card-title mb-1">Comprovante de Escolaridade</h6>
+                                                            <p class="text-muted small mb-0">Diploma ou Histórico</p>
+                                                        </div>
+                                                        <span class="badge bg-warning text-dark">Pendente</span>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <button class="btn btn-sm btn-outline-primary">
+                                                            <i class="fas fa-upload me-1"></i>Enviar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <h6 class="card-title mb-1">Certificado de Proficiência</h6>
+                                                            <p class="text-muted small mb-0">Inglês ou outro idioma</p>
+                                                        </div>
+                                                        <span class="badge bg-danger">Não Enviado</span>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <button class="btn btn-sm btn-outline-primary">
+                                                            <i class="fas fa-upload me-1"></i>Enviar
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 
@@ -424,8 +612,8 @@ html
                                             <div class="col-md-6">
                                                 <label for="preferredCountries" class="form-label required-field">Países de Interesse</label>
                                                 <select class="form-select" id="preferredCountries" multiple required>
-                                                    <option value="CA">Canadá</option>
-                                                    <option value="AU">Austrália</option>
+                                                    <option value="CA" selected>Canadá</option>
+                                                    <option value="AU" selected>Austrália</option>
                                                     <option value="NZ">Nova Zelândia</option>
                                                     <option value="US">Estados Unidos</option>
                                                     <option value="UK">Reino Unido</option>
@@ -440,7 +628,7 @@ html
                                                 <select class="form-select" id="programType" required>
                                                     <option value="" disabled selected>Selecione...</option>
                                                     <option value="WORK">Trabalho</option>
-                                                    <option value="STUDY">Estudo</option>
+                                                    <option value="STUDY" selected>Estudo</option>
                                                     <option value="WORK_STUDY">Trabalho e Estudo</option>
                                                     <option value="AU_PAIR">Au Pair</option>
                                                     <option value="INTERNSHIP">Estágio</option>
@@ -451,14 +639,14 @@ html
                                         <div class="row mb-3">
                                             <div class="col-md-6">
                                                 <label for="startDate" class="form-label">Data Prevista para Início</label>
-                                                <input type="date" class="form-control" id="startDate">
+                                                <input type="date" class="form-control" id="startDate" value="2024-01-15">
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="duration" class="form-label">Duração Pretendida</label>
                                                 <select class="form-select" id="duration">
                                                     <option value="3">3 meses</option>
                                                     <option value="6">6 meses</option>
-                                                    <option value="12">1 ano</option>
+                                                    <option value="12" selected>1 ano</option>
                                                     <option value="24">2 anos</option>
                                                     <option value="36">3 anos ou mais</option>
                                                 </select>
@@ -467,7 +655,7 @@ html
                                         
                                         <div class="mb-3">
                                             <label for="additionalInfo" class="form-label">Informações Adicionais</label>
-                                            <textarea class="form-control" id="additionalInfo" rows="3"></textarea>
+                                            <textarea class="form-control" id="additionalInfo" rows="3">Gostaria de ter a oportunidade de trabalhar na área de tecnologia enquanto estudo inglês no exterior.</textarea>
                                         </div>
                                         
                                         <div class="text-end">
@@ -542,10 +730,9 @@ html
                 </div>
                 <div class="modal-body">
                     <form id="applicationForm">
-                        <input type="hidden" id="applyJobId">
                         <div class="mb-4">
-                            <h6 id="jobTitle">Título da Vaga</h6>
-                            <p class="text-muted" id="jobLocation"><i class="fas fa-map-marker-alt me-2"></i>Localização</p>
+                            <h6 id="jobTitle">Au Pair na Alemanha</h6>
+                            <p class="text-muted" id="jobLocation"><i class="fas fa-map-marker-alt me-2"></i>Berlim, Alemanha</p>
                         </div>
                         
                         <div class="alert alert-info">
@@ -554,7 +741,16 @@ html
                         
                         <div class="mb-3">
                             <label for="applicationMessage" class="form-label required-field">Mensagem de Candidatura</label>
-                            <textarea class="form-control" id="applicationMessage" rows="5" required placeholder="Explique por que você é o candidato ideal para esta vaga..."></textarea>
+                            <textarea class="form-control" id="applicationMessage" rows="5" required>Prezados, 
+
+Meu nome é John Doe e estou muito interessado na vaga de Au Pair na Alemanha. Tenho experiência cuidando de crianças e estou ansioso para aprender mais sobre a cultura alemã enquanto ajudo uma família local.
+
+Sou organizado, responsável e adoro trabalhar com crianças. Tenho inglês intermediário e estou começando a aprender alemão.
+
+Agradeço pela consideração e estou à disposição para qualquer informação adicional.
+
+Atenciosamente,
+John Doe</textarea>
                             <small class="text-muted">Explique por que você é o candidato ideal para esta vaga (mínimo 200 caracteres)</small>
                         </div>
                         
@@ -613,7 +809,7 @@ html
                     <p>Você é responsável por fornecer informações verdadeiras e manter seus dados atualizados. Informações falsas podem resultar no cancelamento de sua candidatura.</p>
                     
                     <h6 class="mt-4">4. Processo de Seleção</h6>
-                    <p>A Worldwise não garante a aprovação em nenhom programa. A seleção final é sempre feita pela instituição/empresa no país de destino.</p>
+                    <p>A Worldwise não garante a aprovação em nenhum programa. A seleção final é sempre feita pela instituição/empresa no país de destino.</p>
                     
                     <h6 class="mt-4">5. Taxas e Pagamentos</h6>
                     <p>Alguns programas podem têm taxas associadas, que serão claramente comunicadas antes do compromisso.</p>
@@ -662,7 +858,7 @@ html
                     <p>Utilizamos cookies para melhorar a experiência no site. Você pode gerenciar as preferências de cookies no seu navegador.</p>
                     
                     <h6 class="mt-4">7. Alterações na Política</h6>
-                    <p>Esta política pode be atualizada periodicamente. Alterações significativas serão comunicadas aos usuários.</p>
+                    <p>Esta política pode ser atualizada periodicamente. Alterações significativas serão comunicadas aos usuários.</p>
                     
                     <h6 class="mt-4">8. Contato</h6>
                     <p>Para questões sobre privacidade, entre em contato com nosso Encarregado de Dados em privacidade@worldwise.com.</p>
@@ -684,7 +880,6 @@ html
                 </div>
                 <div class="modal-body">
                     <form id="educationForm">
-                        <input type="hidden" id="educationId">
                         <div class="mb-3">
                             <label for="educationLevel" class="form-label required-field">Nível de Formação</label>
                             <select class="form-select" id="educationLevel" required>
@@ -724,4 +919,429 @@ html
                         </div>
                         
                         <div class="mb-3">
-                            <label for="educationDescription"
+                            <label for="educationDescription" class="form-label">Descrição (opcional)</label>
+                            <textarea class="form-control" id="educationDescription" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="educationForm" class="btn btn-primary">Salvar Formação</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Experiência -->
+    <div class="modal fade" id="experienceModal" tabindex="-1" aria-labelledby="experienceModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="experienceModalLabel">Adicionar Experiência Profissional</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="experienceForm">
+                        <div class="mb-3">
+                            <label for="experiencePosition" class="form-label required-field">Cargo/Função</label>
+                            <input type="text" class="form-control" id="experiencePosition" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="experienceCompany" class="form-label required-field">Empresa/Organização</label>
+                            <input type="text" class="form-control" id="experienceCompany" required>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="experienceStart" class="form-label required-field">Data de Início</label>
+                                <input type="date" class="form-control" id="experienceStart" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="experienceEnd" class="form-label">Data de Término</label>
+                                <input type="date" class="form-control" id="experienceEnd">
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" id="experienceCurrent">
+                                    <label class="form-check-label" for="experienceCurrent">Emprego atual</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="experienceDescription" class="form-label required-field">Descrição das Atividades</label>
+                            <textarea class="form-control" id="experienceDescription" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="experienceSkills" class="form-label">Habilidades Desenvolvidas</label>
+                            <input type="text" class="form-control" id="experienceSkills" placeholder="Separe por vírgulas (ex: trabalho em equipe, liderança, etc)">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="experienceForm" class="btn btn-primary">Salvar Experiência</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Acesse sua conta Worldwise</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="sso-container">
+                        <h4 class="text-center mb-4">Autenticação Única</h4>
+                        <p class="text-center mb-4">Escolha um método para acessar sua conta:</p>
+                        
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" id="emailLoginBtn">
+                                <i class="fas fa-envelope me-2"></i>Entrar com Email
+                            </button>
+                            
+                            <div class="sso-divider">
+                                <span>OU</span>
+                            </div>
+                            
+                            <button class="sso-provider-btn" style="background-color: #4285F4; color: white;">
+                                <i class="fab fa-google me-2"></i>Continuar com Google
+                            </button>
+                            
+                            <button class="sso-provider-btn" style="background-color: #3B5998; color: white;">
+                                <i class="fab fa-facebook-f me-2"></i>Continuar com Facebook
+                            </button>
+                            
+                            <button class="sso-provider-btn" style="background-color: #1DA1F2; color: white;">
+                                <i class="fab fa-twitter me-2"></i>Continuar com Twitter
+                            </button>
+                            
+                            <button class="sso-provider-btn" style="background-color: #000000; color: white;">
+                                <i class="fab fa-apple me-2"></i>Continuar com Apple
+                            </button>
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            <p class="small">Ao continuar, você concorda com nossos <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Termos</a> e <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Política de Privacidade</a>.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Email Login Form (hidden by default) -->
+                    <form id="emailLoginForm" style="display: none;">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label required-field">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label required-field">Senha</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                            <div class="form-text text-end">
+                                <a href="#" id="forgotPassword">Esqueceu a senha?</a>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Lembrar de mim</label>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </div>
+                        
+                        <div class="text-center mt-3">
+                            <p>Não tem uma conta? <a href="#" id="registerLink">Cadastre-se</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="text-white mb-4">
+                        <i class="fas fa-globe-americas me-2"></i>Worldwise
+                    </h5>
+                    <p class="text-muted">Transformando vidas através de experiências interculturais desde 2025.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 mb-4">
+                    <h5 class="text-white mb-4">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-muted">Home</a></li>
+                        <li class="mb-2"><a href="#vagas" class="text-muted">Vagas</a></li>
+                        <li class="mb-2"><a href="#perfil" class="text-muted">Meu Perfil</a></li>
+                        <li class="mb-2"><a href="#sobre" class="text-muted">Sobre Nós</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 mb-4">
+                    <h5 class="text-white mb-4">Suporte</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Contato</a></li>
+                        <li class="mb-2"><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" class="text-muted">Privacidade</a></li>
+                        <li class="mb-2"><a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" class="text-muted">Termos de Serviço</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 mb-4">
+                    <h5 class="text-white mb-4">Contato</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Av. Paulista, 1000 - São Paulo/SP</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>(11) 9999-9999</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i>contato@worldwise.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-top pt-4 mt-4 text-center">
+                <p class="text-muted mb-0">&copy; 2025 Worldwise. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Configurações de segurança
+        document.addEventListener('DOMContentLoaded', function() {
+            // Previne XSS
+            function escapeHtml(unsafe) {
+                return unsafe
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;")
+                    .replace(/'/g, "&#039;");
+            }
+            
+            // Validação de email
+            function validateEmail(email) {
+                const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                return re.test(String(email).toLowerCase());
+            }
+            // Modal de aplicação com validação
+            const applyModal = document.getElementById('applyModal');
+            if (applyModal) {
+                applyModal.addEventListener('show.bs.modal', function(event) {
+                    const button = event.relatedTarget;
+                    const jobTitle = escapeHtml(button.getAttribute('data-job'));
+                    const modalTitle = applyModal.querySelector('.modal-title');
+                    const jobTitleElement = applyModal.querySelector('#jobTitle');
+                    
+                    modalTitle.textContent = 'Aplicar para: ' + jobTitle;
+                    jobTitleElement.textContent = jobTitle;
+                    
+                    // Reset do formulário
+                    const form = document.getElementById('applicationForm');
+                    if (form) form.reset();
+                });
+                
+                // Validação do formulário
+                const applicationForm = document.getElementById('applicationForm');
+                if (applicationForm) {
+                    applicationForm.addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        
+                        const message = document.getElementById('applicationMessage').value;
+                        if (message.length < 200) {
+                            alert('A mensagem deve ter pelo menos 200 caracteres');
+                            return;
+                        }
+                        
+                        // Simular envio para API
+                        const jobTitle = document.getElementById('jobTitle').textContent;
+                        alert(`Aplicação para "${jobTitle}" enviada com sucesso!`);
+                        
+                        const applyModalInstance = bootstrap.Modal.getInstance(applyModal);
+                        applyModalInstance.hide();
+                    });
+                }
+            }
+            
+            // Sistema de login/logout seguro
+            const loginBtn = document.getElementById('loginBtn');
+            if (loginBtn) {
+                // Verificar se usuário está logado
+                const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+                
+                if (isLoggedIn) {
+                    loginBtn.textContent = 'Logout';
+                    loginBtn.className = 'btn btn-outline-light';
+                }
+                
+                loginBtn.addEventListener('click', function() {
+                    if (isLoggedIn) {
+                        if (confirm('Deseja realmente sair?')) {
+                            localStorage.removeItem('isLoggedIn');
+                            window.location.reload();
+                        }
+                    } else {
+                        const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+                        loginModal.show();
+                    }
+                });
+            }
+            
+            // Toggle between SSO and email login
+            var emailLoginBtn = document.getElementById('emailLoginBtn');
+            var emailLoginForm = document.getElementById('emailLoginForm');
+            var ssoContainer = document.querySelector('.sso-container');
+            
+            if (emailLoginBtn && emailLoginForm && ssoContainer) {
+                emailLoginBtn.addEventListener('click', function() {
+                    ssoContainer.style.display = 'none';
+                    emailLoginForm.style.display = 'block';
+                });
+            }
+            
+            // Validação do formulário de perfil
+            var personalInfoForm = document.getElementById('personalInfoForm');
+            if (personalInfoForm) {
+                personalInfoForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Informações pessoais salvas com sucesso!');
+                    // Aqui você adicionaria o código para enviar os dados para o servidor
+                });
+            }
+            
+            // Validação do formulário de preferências
+            var preferencesForm = document.getElementById('preferencesForm');
+            if (preferencesForm) {
+                preferencesForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Preferências salvas com sucesso!');
+                    // Aqui você adicionaria o código para enviar os dados para o servidor
+                });
+            }
+            
+            // Validação do formulário de aplicação
+            var applicationForm = document.getElementById('applicationForm');
+            if (applicationForm) {
+                applicationForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var jobTitle = document.getElementById('jobTitle').textContent;
+                    alert('Aplicação para "' + jobTitle + '" enviada com sucesso!');
+                    var applyModalInstance = bootstrap.Modal.getInstance(applyModal);
+                    applyModalInstance.hide();
+                    // Aqui você adicionaria o código para enviar os dados para o servidor
+                });
+            }
+            
+            // Validação do formulário de educação
+            var educationForm = document.getElementById('educationForm');
+            if (educationForm) {
+                educationForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Formação acadêmica adicionada com sucesso!');
+                    var educationModalInstance = bootstrap.Modal.getInstance(document.getElementById('educationModal'));
+                    educationModalInstance.hide();
+                    // Aqui você adicionaria o código para enviar os dados para o servidor
+                });
+            }
+            
+            // Validação do formulário de experiência
+            var experienceForm = document.getElementById('experienceForm');
+            if (experienceForm) {
+                experienceForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Experiência profissional adicionada com sucesso!');
+                    var experienceModalInstance = bootstrap.Modal.getInstance(document.getElementById('experienceModal'));
+                    experienceModalInstance.hide();
+                    // Aqui você adicionaria o código para enviar os dados para o servidor
+                });
+            }
+            
+            // Sistema de login completo
+            const emailLoginForm = document.getElementById('emailLoginForm');
+            if (emailLoginForm) {
+                emailLoginForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = document.getElementById('loginEmail').value;
+                    const password = document.getElementById('loginPassword').value;
+                    
+                    if (!validateEmail(email)) {
+                        alert('Por favor, insira um email válido');
+                        return;
+                    }
+                    
+                    if (password.length < 8) {
+                        alert('A senha deve ter pelo menos 8 caracteres');
+                        return;
+                    }
+                    
+                    // Simular autenticação
+                    localStorage.setItem('isLoggedIn', 'true');
+                    
+                    const loginModalInstance = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+                    loginModalInstance.hide();
+                    
+                    window.location.reload();
+                });
+            }
+            
+            // Link para registro
+            var registerLink = document.getElementById('registerLink');
+            if (registerLink) {
+                registerLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Página de registro será implementada na versão completa.');
+                });
+            }
+            
+            // Link para esqueceu a senha
+            var forgotPassword = document.getElementById('forgotPassword');
+            if (forgotPassword) {
+                forgotPassword.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Recuperação de senha será implementada na versão completa.');
+                });
+            }
+            
+            // Handle SSO provider buttons
+            var ssoProviderBtns = document.querySelectorAll('.sso-provider-btn');
+            ssoProviderBtns.forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var provider = this.querySelector('i').className.split(' ')[1].replace('fa-', '');
+                    alert('Autenticação com ' + provider.charAt(0).toUpperCase() + provider.slice(1) + ' será implementada na versão completa.');
+                    
+                    // Simulate successful login
+                    var loginModalInstance = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+                    loginModalInstance.hide();
+                    
+                    var loginBtn = document.getElementById('loginBtn');
+                    loginBtn.textContent = 'Logout';
+                    loginBtn.className = 'btn btn-outline-light';
+                    loginBtn.onclick = function() {
+                        if (confirm('Deseja realmente sair?')) {
+                            loginBtn.textContent = 'Login';
+                            loginBtn.className = 'btn btn-outline-light';
+                            loginBtn.onclick = function() {
+                                loginModalInstance.show();
+                            };
+                        }
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>
